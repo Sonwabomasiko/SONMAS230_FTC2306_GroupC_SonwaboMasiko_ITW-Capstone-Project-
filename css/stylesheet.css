@@ -1,9 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,500&display=swap');
+
 * {
     
-    box-sizing:border-box
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
 
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: url('../images/Banner1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 20px;
+    height: 500px;
+}
+#Profileimg img{
+    border: 5px solid #00C4FF;
+    border-radius: 50%;
+}
+#summary {
+    font-size: 30px;
+}
+.Menu{
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-around;
+}
+nav ul li{
+    list-style: none;  /*this will remove bullet points */
+}
+nav ul li a {
+    text-decoration: none; /* this will remove underline on text */
+    /* color: white; */
+}
+h1 {
+    color: #00C4FF;
+    font-size: 60px;
+} 
 /* Container for skill bars */
 .container {
   width: 100%; 

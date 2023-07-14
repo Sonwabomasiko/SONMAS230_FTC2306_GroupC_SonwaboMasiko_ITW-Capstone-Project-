@@ -46,6 +46,24 @@ h1 {
     color: #00C4FF;
     font-size: 60px;
 } 
+h2{
+    color: #497E92;
+}
+.MainContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+#AboutMe p{
+    padding: 10px;
+}
+#Education h2,h4 {
+padding: 10px;
+}
+#Skills h2, p{
+    padding: 10px;
+}
 /* Container for skill bars */
 .container {
   width: 100%; 
@@ -56,9 +74,118 @@ h1 {
   text-align: right; 
   padding-top: 10px; 
   padding-bottom: 10px; 
-  color: white; 
+  color: black; 
 }
 
-.html {width: 40%; background-color: #04AA6D;} 
-.css {width: 40%; background-color: #2196F3;} 
-.bbp {width: 65%; background-color: #f44336;} 
+.html {width: 40%; background-color: #00C4FF;} 
+.css {width: 40%; background-color: #C3F9FF;} 
+.bbp {width: 65%; background-color: #C25E5E;} 
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    background-color: black;
+}
+
+form {
+    margin: 20px;
+    padding: 2rem 1rem 0;
+    border: 1px solid #C25E5E;
+    border-radius: 10px;
+}
+input, select, textarea{
+    display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+	padding-top: 1.5rem;
+    border: 0;
+    border: 2px solid #C25E5E;
+    box-shadow: 1px  5px solid white;
+}
+
+label {
+    color: #8597a3;
+	top: 1.5rem;
+	transition: .25s ease;
+}
+.socials{
+    float: right;
+    top: 50%;   left: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+}
+.socials li{
+    list-style: none;
+    display: inline-block;
+}
+
+.socials li a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+.socials li a .fa{
+    width: 70px;  height: 70px;
+    text-align: center;   line-height: 70px;
+    font-size: 40px;
+}
+.socials li a span{
+    display: inline-block;
+    width: 0px;  height: 70px;
+    text-align: center;   line-height: 70px;
+    overflow: hidden;
+    vertical-align: bottom;
+    font-size: 30px;
+    margin-right: -5px;
+    transition: 1s;
+}
+.socials li a:hover span{
+    width: 180px;
+}
+.socials li:nth-child(1) a .fa , ul li:nth-child(1) a span{
+    background: #3b5999;
+}
+.socials li:nth-child(2) a .fa , .socials li:nth-child(2) a span{
+    background: #4078c0;
+}
+.socials li:nth-child(3) a .fa , .socials li:nth-child(3) a span{
+    background: #075e54;
+}
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+#backtotop {
+    float: right;
+    background-color: #C25E5E;
+    border: 1px solid #C25E5E;;
+    border-radius: 10px;
+    padding: 20px;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 12px;
+    }
+    #introStatement {
+        font-size: 20px;
+    }
+    #backtotop {
+        float: right;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    article {
+        background-color: #C3F9FF;
+        padding: 10px;
+    }
+    }

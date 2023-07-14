@@ -6,18 +6,19 @@
     <link rel="stylesheet" href="css/stylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images\Sonwabo.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/111af399e2.js" crossorigin="anonymous"></script>
 </head>
 <body>
    <!-- Hero banner section: consist of profile image and name-->
     <header class="hero">
         <div id="Top">
-            <nav>
+            <nav class="sticky">
                 <ul class="Menu">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Education</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#Top">Home</a></li>
+                    <li><a href="#AboutMe">About</a></li>
+                    <li><a href="#Education">Education</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#ContactForm">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -78,10 +79,16 @@
     <footer>
 
         <div id="ContactForm">
+            <h2>Contact Me</h2>
             <form action="https://formsubmit.co/masikosonwabo@gmail.com" method="POST">
 
-                <input type="text" name="name" placeholder="your name" required>
-                <input type="email" name="email" placeholder="Your email" required>
+                <label for="textarea">Full Name</label>
+
+                <input type="text" name="name" placeholder="eg:Sonwabo Masiko" required>
+                <br>
+                <label for="textarea">Your Email</label>
+
+                <input type="email" name="email" placeholder="eg:name@gmail.com" required>
           
                 <br>
                 <select name="" required>
@@ -96,8 +103,24 @@
               </form>
         </div>
         <div id="Connect">
-
+            <h2>Connect with me</h2>
+            <ul class="socials">
+                <li> <a href="https://www.facebook.com/sonwabo.masiko.5" target="_blank">
+                     <i class="fa fa-facebook" aria-hidden="true"></i> 
+                     <span>Facebook</span>
+                </a> </li>
+                <li><a href="https://github.com/Sonwabomasiko"  target="_blank"> 
+                    <i class="fa fa-github" aria-hidden="true"></i> 
+                    <span>Github</span>
+                </a> </li>
+                <li><a href="https://wa.me/0656064644"  target="_blank"> 
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i> 
+                    <span>Whatsapp</span> 
+                </a> </li>
+             </ul>
         </div>
+
+        <button id="backtotop"><a href="#Top">Back to top</a></button>
 
     </footer>
 </body>

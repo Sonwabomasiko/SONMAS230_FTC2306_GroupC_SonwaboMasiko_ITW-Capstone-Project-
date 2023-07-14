@@ -9,7 +9,11 @@
    <!-- Hero banner section: consist of profile image and name-->
     <header>
         <div id="Profileimg">
-
+            <picture>
+                <source media="(min-width: 650px)" srcset="images\SonwaboMasiko.jpg">
+                <source media="(min-width: 465px)" srcset="images\SonwaboMasiko -Head.jpg">
+                <img src="images\SonwaboMasiko.jpg" width="250" height="250">
+            </picture>
         </div>
         <div id="Username">
             <h1>Sonwabo Masiko</h1>
@@ -26,6 +30,45 @@
 
         </ul>
     </nav>
+
+    <main class="MainContent">
+        <section id="AboutMe">
+            <h2>About Me</h2>
+            <p>My name is Sonwabo Masiko, and I am a passionate software development student. 
+                Currently pursuing my studies in software development,
+                I am dedicated to honing my skills and expanding my knowledge in various programming languages and technologies. </p>
+        </section>
+
+        <section id="EducationandSkills">
+
+            <div id="Education">
+                <h2>Education</h2>
+                <h4>Software Development at <a href="https://www.codespace.co.za" target="_blank">CodeSpace Academy</a></h4> 
+                <p>I am currently pursuing a comprehensive software development program at Codespace Academy, with an expected completion date in December 2023. </p>
+            </div>
+
+            <div id="Skills">
+                <h2>Skills</h2>
+            <p>HTML</p>
+            <div class="container">
+             <div class="skills html">40%</div>
+            </div>
+
+            <p>CSS</p>
+            <div class="container">
+            <div class="skills css">40%</div>
+            </div>
+
+            <p>Block Based Programming</p>
+            <div class="container">
+            <div class="skills bbp">65%</div>
+            </div>
+            </div>
+
+        </section>
+        
+
+    </main>
 
     <!--Contact Section-->
     <footer>
